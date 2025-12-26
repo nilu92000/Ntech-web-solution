@@ -163,20 +163,6 @@ h2{text-align:center;font-size:2.5rem;margin-bottom:40px}
     justify-content:center;
   }
 }
-.close-btn{
-  position:absolute;
-  top:12px;
-  right:16px;
-  font-size:22px;
-  color:#00ffd5;
-  cursor:pointer;
-}
-.close-btn:hover{
-  color:#fff;
-}
-.modal-box{
-  position:relative;
-}
 
 </style>
 </head>
@@ -244,11 +230,11 @@ h2{text-align:center;font-size:2.5rem;margin-bottom:40px}
 <div class="grid">
   <div class="card" style="background-image:url('st.png')">
     <h3>Static Website</h3>
-    <div class="price">₹8,000 – ₹15,000</div>
+    <div class="price">₹3,000 – ₹5,000</div>
   </div>
   <div class="card" style="background-image:url('b.png')">
     <h3>Business Website</h3>
-    <div class="price">₹15,000 – ₹25,000</div>
+    <div class="price">₹7,000 – ₹10,000</div>
   </div>
   <div class="card" style="background-image:url('dy.png')">
     <h3>Dynamic Website</h3>
@@ -314,21 +300,15 @@ Some projects are shown as demo due to client privacy.
 
 
 <!-- HIRE MODAL -->
-
 <div class="modal" id="hireModal">
   <div class="modal-box">
-    <h2 style="text-align:center;color:#00ffd5">Hire Me</h2>
-
+    <h2 style="color:#00ffd5;text-align:center">Hire Me</h2>
     <input id="name" placeholder="Your Name">
     <input id="phone" placeholder="Phone Number">
     <textarea id="req" placeholder="Your Requirement"></textarea>
-
     <button onclick="sendWhatsApp()">Submit</button>
-
-    <p class="close" onclick="closeHire()">Close</p>
   </div>
 </div>
-
 
 <a class="whatsapp" href="https://wa.me/918252647611" target="_blank">
   <i class="fab fa-whatsapp"></i>
@@ -384,18 +364,6 @@ function openHire(){hireModal.style.display="flex"}
 function sendWhatsApp(){
   window.open(`https://wa.me/918252647611?text=Name:${name.value}%0APhone:${phone.value}%0AReq:${req.value}`,'_blank')
 }
-window.onclick = function(e){
-  const modal = document.getElementById("hireModal");
-  if(e.target === modal){
-    closeHire();
-  }
-
-};
-function closeHire(){
-  document.getElementById("hireModal").style.display = "none";
-}
-
-
 </script>
 
 </body>
